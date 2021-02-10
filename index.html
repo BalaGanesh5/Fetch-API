@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fetchAPI</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-4 mb-4">Fetch API</h1>
+      <div class="d-flex">
+        <button class="btn btn-primary m-1" id="getText">Click</button>
+        <button class="btn btn-info m-1" id="getUsers">Get Users</button>
+        <button class="btn btn-warning m-1" id="getPost">Post</button>
+      </div>
+      <hr />
+      <div id="output"></div>
+      <div id="usersop"></div>
+
+      <!-- Form Starts here -->
+      <form id="addPost">
+        <div class="form-group mb-2 mt-4">
+          <input
+            id="title"
+            type="text"
+            placeholder="title here"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group mb-4">
+          <textarea
+            id="body"
+            placeholder="body here"
+            class="form-control"
+          ></textarea>
+        </div>
+        <input type="submit" value="submit" class="btn btn-secondary" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>
